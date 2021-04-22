@@ -39,7 +39,10 @@ class ListTableViewController: UITableViewController {
     
         let nowIndexPathDictionary = wordArray[indexPath.row]
         cell.englishLabel.text = nowIndexPathDictionary["english"]
-        cell.japaneseLabel.text = nowIndexPathDictionary["japanese"]
         return cell
+        
 }
+    @IBAction func back1(){
+        self.dismiss(animated: true, completion: nil)
+    }
 }

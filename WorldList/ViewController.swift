@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let saveData = UserDefaults.standard
         if saveData.array(forKey: "WORD") != nil{
         if saveData.array(forKey: "WORD")!.count > 0 {
-            performSegue(withIdentifier: "toQuestionview", sender: nil)
+            performSegue(withIdentifier: "toQuestionView", sender: nil)
         }
         }else{
             let alert = UIAlertController(
